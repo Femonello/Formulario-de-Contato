@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seção 08 - Formulário de Contato</title>
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>Formulário de contato</legend>
+
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" placeholder="Preenchaa aqui seu nome e sobrenome" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="exemplo@exemplo.com.br" required>
+
+            <label for="subject">Assunto</label>
+            <input type="text" name="subject" id="subject" required>
+
+            <label for="msg">Mensagem</label>
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Digite aqui seu texto"
+            minlength="20" maxlength="120" required></textarea>
+
+            <input type="submit" value="Enviar" id="btn">
+        </fieldset>
+    </form>
+
+</body>
+</html>

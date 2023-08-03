@@ -1,0 +1,80 @@
+html{
+    font-family:"Helvetica Neue", arial, sans-serif;
+    background-color: #181818;
+    color: white;
+}
+
+body{
+    width: 100vw; 
+    height: 100vh; /*para alinhamento na vertical, necessário incluir esse parametro*/
+    margin: 0; /*retira-se a margem padrão para que não apareça o scroll*/
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/*trabalhando a alteração de cores com pseudoclasses - 
+utilizando-as juntas conforme abaixo, a cor será alterada quando o elemento estiver
+em foco (cursor do mouse sobre, selecionado) e o conteúdo for invalido de acordo com os aributos 
+escritos no html*/
+
+input:invalid:focus,textarea:invalid:focus{
+    border-bottom: 2px solid #ff000d;
+ }
+ 
+ input:valid:focus,textarea:valid:focus{
+     border-bottom: 2px solid #0ec72a;
+  }
+ 
+ input:focus, textareaa:focus{
+     border-bottom: 2px solid #8e999a;
+     background-color: #202727;;
+ }
+
+form{
+    width: 31.25em;
+    background-color: #0e1010;
+}
+
+fieldset{
+    border: none;
+}
+
+legend{
+    text-align: center;
+    font-weight: bold;
+    color: #8e999a;
+}
+
+label,
+input,
+textarea{
+    margin-bottom: 1rem;
+    display: block;
+    flex-flow: column;
+    width: 100%;
+    box-sizing:border-box;
+    outline: 0;
+    }
+
+input,
+textarea{
+    background-color: rgba(0,0,0,.3);
+    border: 2px solid transparent;
+    border-bottom-color: #ccc;
+    padding: .75em;
+    margin: .5em 0 2.5em;
+    color: white;
+        
+}
+
+#btn{
+    padding: 0.7rem;
+    margin-top: 1rem;
+    width: fit-content;
+    background-color: #202727;
+    border:none;
+    color: white;
+    cursor:pointer;
+}
